@@ -11,20 +11,33 @@
   box-sizing: border-box;
 }
 h1 {
-  margin-bottom: 15px;
   text-align: center;
   font-family: Arial;
   font-size: 175%;
   color: #3b3b3b;
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
+.Container {
+  width: 30%;
+  height: 16.66%;
+  margin-left: 23px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #f4e8ff;
+  font-family: Arial;
+  color: #3b3b3b;
+}
+section {
+  float: left;
 }
 div {
-  float: right;
   border: 1px solid black;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
   border-top: 0px;
   border-right: 0px;
-  width: 20%;
+  width: 100px;
   height: 20px;
   font-family: Arial;
   font-size: 125%;
@@ -35,24 +48,25 @@ div {
 }
 #Chicken {
   background-color: #ffb8e7;
+  float: right;
  }
 #Beef {
   background-color: #b8ffd3;
+  float: right;
 }
 #Sushi {
   background-color: #b8fdff;
+  float: right;
 }
-section {
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: #f4e8ff;
-  width: 90%;
-  height: 110%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: auto;
-  font-family: Arial;
-  color: #3b3b3b;
+#First {
+  margin-top: 0px;
+}
+#Second {
+  position: relative;
+  margin-top: -18.5px;
+}
+#Third {
+  margin-top: -37px;
 }
 .Text {
   margin: 20px;
@@ -60,41 +74,60 @@ section {
 }
 /* Simple Responsive Framework. */
 .row {
-  width: 33.33%;
+  width: 100%;
 }
 
 /********** Large devices only **********/
 @media (min-width: 992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3 {
+  #First, #Second, #Third
   }
-  .col-lg-1 {
-    width: 16.66%;
+  #First {
+    width: 30%;
   }
-  .col-lg-2 {
-    width: 16.66%;
+  #Second {
+    width: 30%;
   }
-  .col-lg-3 {
-    width: 16.66%;
+  #Third {
+    width: 30%;
   }
 }
 
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  .col-md-1, .col-md-2, .col-md-3 {
-    float: left;
-    border: 1px solid green;
+  #First, #Second, #Third
   }
-  .col-md-1 {
-    width: 50%;
+  #First {
+    width: 45%;
+    height: 33.33%
   }
-  .col-md-2 {
-    width: 50%;
+  #Second {
+    width: 45%;
+    height: 33.33%
   }
-  .col-md-3 {
-    width: 100%;
+  #Third {
+    margin-top: 20px;
+    width: 92.5%;
+    height: 33.33%
   }
 }
 
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  #First, #Second, #Third
+  }
+  #First {
+    width: 90%;
+    height: 16.66%
+  }
+  #Second {
+    width: 90%;
+    height: 16.66%
+  }
+  #Third {
+    width: 90%;
+    height: 16.66%
+  }
+}
 </style>
 </head>
 <body>
