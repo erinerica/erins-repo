@@ -18,20 +18,8 @@ h1 {
   margin-top: 35px;
   margin-bottom: 45px;
 }
-.Container {
-  width: 30%;
-  height: 16.66%;
-  margin-left: 23px;
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: #f4e8ff;
-  font-family: Arial;
-  color: #3b3b3b;
-}
-section {
-  float: left;
-}
 div {
+  float: right;
   border: 1px solid black;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -46,27 +34,26 @@ div {
   color: #3b3b3b;
   padding: 5px;
 }
+.Container {
+  width: 25%;
+  height: 16.66%;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #f4e8ff;
+  font-family: Arial;
+  color: #3b3b3b;
+  }
+.Subheader {
+  float: right;
+}
 #Chicken {
   background-color: #ffb8e7;
-  float: right;
- }
+}
 #Beef {
   background-color: #b8ffd3;
-  float: right;
 }
 #Sushi {
   background-color: #b8fdff;
-  float: right;
-}
-#First {
-  margin-top: 0px;
-}
-#Second {
-  position: relative;
-  margin-top: -18.5px;
-}
-#Third {
-  margin-top: -37px;
 }
 .Text {
   margin: 20px;
@@ -79,64 +66,57 @@ div {
 
 /********** Large devices only **********/
 @media (min-width: 992px) {
-  #First, #Second, #Third
+  #First, #Second, #Third {
+    float: left;
+    width: 30%;
+    height: 16.66%
   }
   #First {
-    width: 30%;
+    margin-top: 0px;
+    margin-left: 3%
   }
   #Second {
-    width: 30%;
+    margin-top: -18.5px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
   #Third {
-    width: 30%;
+    margin-top: -37px;
   }
 }
 
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  #First, #Second, #Third
+  #First, #Second, #Third {
+    float: left;
   }
   #First {
-    width: 45%;
-    height: 33.33%
+    margin-top: 0px;
+    margin-left: 20px;
+    width: 46%;
   }
   #Second {
-    width: 45%;
-    height: 33.33%
+    margin-top: -18.5px;
+    margin-left: 20px;
+    width: 46%;
   }
   #Third {
     margin-top: 20px;
-    width: 92.5%;
-    height: 33.33%
+    margin-left: 20px;
+    width: 94%;
   }
 }
 
 /********** Small devices only **********/
 @media (max-width: 767px) {
-  #First, #Second, #Third
+  #First, #Second, #Third {
+    width: 90%;
   }
   #First {
-    width: 90%;
-    height: 16.66%
   }
   #Second {
-    width: 90%;
-    height: 16.66%
   }
   #Third {
-    width: 90%;
-    height: 16.66%
   }
 }
 </style>
-</head>
-<body>
-<h1>Our Menu</h1>
-
-<div class="row">
-  <div class="col-lg-3 col-md-6"><p>Chicken</p></div>
-  <div class="col-lg-3 col-md-6"><p>Beef</p></div>
-  <div class="col-lg-3 col-md-6"><p>Sushi</p></div>
-</div>
-</body>
-</html>
