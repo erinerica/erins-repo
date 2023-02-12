@@ -1,0 +1,92 @@
+body {
+	background-color: #ffffff;
+	font-family: 'Varela Round', sans-serif;
+	color: #612032;
+}
+
+/** Header **/
+#header-nav {
+	border-radius: 0px;
+	background-color: #ffffff;
+	border: 0px;
+}
+
+/** Button Styles **/
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #dd9aac;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #3d141f;
+    background-color: #3d141f;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #f5e3e8;
+    border-color: #d0758e;
+}
+
+/** Navbar Styles **/
+
+.navbar-default .navbar-brand {
+    color: #18080c;
+}
+
+div.navbar-header {
+	color: #612032;
+}
+
+.navbar {
+	background-color: #d0758e;
+	border-radius: 0px;
+	padding: 0px;
+}
+
+.nav {
+	background-color: #dd9aac;
+}
+.navbar-brand {
+	color: #18080c;
+}
+
+.navbar-title {
+	color: #2d2d2d;
+}
+
+/** Dropdown Menu Styles **/
+.line-item {
+	text-align: center;
+	background-color: #f5e3e8;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #3d141f;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #ffffff;
+    background-color: #e9beca;
+}
+
+#menu-title {
+	text-align: center;
+}
+
+#Chicken {
+	text-align: center;
+	font-size: 125%;
+	font-weight: bold;
+}
+
+.text-container {
+	background-color: #f1d7de;
+	margin: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+.Text {
+	margin-top: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
