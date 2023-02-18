@@ -15,8 +15,8 @@
 // helloSpeaker object instead of being a standalone function.
 // See Lecture 52, part 2
 	
-	function.speakName = function () {
-  		console.log(speakWord + name);
+	function.helloSpeaker = function () {
+  		console.log(speakWord + names);
 	}
 
 	window.helloSpeaker = helloSpeaker;
