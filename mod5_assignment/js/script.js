@@ -70,8 +70,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 // below.
 // We changed this code to retrieve all categories from the server instead of
 // simply requesting home HTML snippet. We now also have another function
-// called buildAndShowHomeHTML that will receive all the categories from the server
 // and process them: choose random category, retrieve home HTML snippet, insert that
+// called buildAndShowHomeHTML that will receive all the categories from the server
 // random category into the home HTML snippet, and then insert that snippet into our
 // main page (index.html).
 //
@@ -83,7 +83,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
-  [...], // ***** <---- TODO: STEP 1: Substitute [...] ******
+  function (responseText) {
+    document.quierySelector("main-content")
+      .innerHTML = responseText;
+    }, // ***** <---- TODO: STEP 1: Substitute [...] ******
   true); // Explicitly setting the flag to get JSON from server processed into an object literal
 });
 // *** finish **
